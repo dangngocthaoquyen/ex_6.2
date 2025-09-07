@@ -29,13 +29,10 @@
             <input type="text" id="lastName" name="lastName" class="input" required/>
         </div>
 
-        <div class="actions">
-            <button type="submit" class="btn">Join Now</button>
-        </div>
+        <button type="submit" class="btn btn-join">Join Now</button>
     </form>
 </div>
 
 <%@ include file="include/footer.jsp" %>
 </body>
 </html>
-
