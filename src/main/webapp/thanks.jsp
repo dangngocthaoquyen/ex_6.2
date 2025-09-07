@@ -13,31 +13,27 @@
 
     <div class="info">
         <div class="row">
-            <div class="key">Email:</div>
-            <div class="val">${user.email}</div>
+            <span class="key">Email:</span>
+            <span class="val">${user.email}</span>
         </div>
         <div class="row">
-            <div class="key">First Name:</div>
-            <div class="val">${user.firstName}</div>
+            <span class="key">First Name:</span>
+            <span class="val">${user.firstName}</span>
         </div>
         <div class="row">
-            <div class="key">Last Name:</div>
-            <div class="val">${user.lastName}</div>
+            <span class="key">Last Name:</span>
+            <span class="val">${user.lastName}</span>
         </div>
     </div>
 
-    <div class="section">
-        <p class="subtle">To enter another email address, click on the Back button in your browser or the Return button below.</p>
-        <div class="actions">
-            <form action="emailList" method="get">
-                <input type="hidden" name="action" value="join"/>
-                <button type="submit" class="btn">Return</button>
-            </form>
-        </div>
-    </div>
+    <p class="subtle">To enter another email address, click on the Back button in your browser or the Return button below.</p>
+
+    <form action="emailList" method="get">
+        <input type="hidden" name="action" value="join"/>
+        <button type="submit" class="btn btn-return">Return</button>
+    </form>
 </div>
 
 <%@ include file="include/footer.jsp" %>
 </body>
 </html>
-
